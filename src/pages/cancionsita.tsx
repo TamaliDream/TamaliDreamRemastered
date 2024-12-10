@@ -79,7 +79,7 @@ function Cancionsita() {
                     {pdfPath ? (
                         <>
                             <Document file={pdfPath} onLoadSuccess={onDocumentLoadSuccess}>
-                                {Array.from(new Array(numPages), (el, index) => (
+                                {Array.from(new Array(numPages), (index) => (
                                     <Page
                                         key={`page_${index + 1}`}
                                         pageNumber={index + 1}
