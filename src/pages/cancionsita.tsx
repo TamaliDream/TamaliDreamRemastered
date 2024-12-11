@@ -55,7 +55,7 @@ function Cancionsita() {
         const todaySong = getMusicForToday();
         setSong(todaySong);
 
-        if (todayPdf === "/files/default.pdf") {
+        if (todayPdf === "./files/default.pdf") {
             setPdfPath(null);
             const allPdfPaths = pdfRoutes.map((pdf) => pdf.path);
             setAllPdfs(allPdfPaths);
