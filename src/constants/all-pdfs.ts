@@ -28,7 +28,7 @@ export function getPdfForToday(): string {
   const dayOfMonth = today.getDate();
   const pdfForToday = pdfRoutes.find(pdf => pdf.day === dayOfMonth);
 
-  return pdfForToday ? pdfForToday.path : './files/default.pdf';
+  return pdfForToday ? pdfForToday.path : 'no';
 }
 
 export function getMusicForToday(): string {
