@@ -24,16 +24,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
-@layer base {
-  * {
-    @apply border;
-  }
-  body {
-    @apply bg-pink-100 text-foreground;
-  }
-}
-
 @keyframes heart-fall {
   0% {
     transform: translateY(-10vh) rotate(0deg) scale(1);
