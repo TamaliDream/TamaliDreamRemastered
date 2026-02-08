@@ -4,7 +4,7 @@ import Imagen3 from "../assets/galeria/2023-06-14_00.02.00.png";
 import Imagen4 from "../assets/galeria/WhatsApp Image 2024-12-09 at 1.06.14 PM.jpeg";
 import Imagen6 from "../assets/galeria/WhatsApp Image 2024-12-09 at 1.06.15 PM.jpeg";
 import { useEffect, useState } from "react";
-import { motion, useMotionValue } from "framer-motion";
+import { motion, useMotionValue} from "motion/react"
 
 const imgs = [
   Imagen1,
@@ -23,7 +23,7 @@ const SPRING_OPTIONS = {
   mass: 3,
   stiffness: 400,
   damping: 50,
-};
+} as const;
 
 export const SwipeCarousel = () => {
   const [imgIndex, setImgIndex] = useState(0);
