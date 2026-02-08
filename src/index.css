@@ -30,7 +30,7 @@ html {
     @apply border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-pink-100 text-foreground;
   }
 }
 
